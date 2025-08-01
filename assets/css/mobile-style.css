@@ -1,0 +1,357 @@
+/* ===================================
+   HORWING TECHNOLOGY - MOBILE STYLES
+   ===================================
+   Responsive design and mobile optimizations
+   Organized by screen size and feature support
+   ================================== */
+
+/* ==================== 
+   LARGE MOBILE & TABLET
+   Max Width: 768px
+   ==================== */
+
+/* Enhanced mobile-first responsive design for glass elements */
+@media (max-width: 768px) {
+    .glass-orb-1 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .glass-orb-2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .glass-orb-3 {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .hero-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .section-header h2 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+    }
+    
+    .modern-glass-card {
+        margin: 1rem 0;
+    }
+}
+
+/* Main responsive design for tablets and mobile */
+@media (max-width: 768px) {
+    /* Navigation Menu */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.15);
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0 0 20px 20px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu .nav-item {
+        margin: 1rem 0;
+    }
+
+    .nav-menu .nav-link {
+        color: #333;
+        background: rgba(44, 90, 160, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(44, 90, 160, 0.2);
+        margin: 0 2rem;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    .nav-menu .nav-link:hover {
+        background: rgba(44, 90, 160, 0.2);
+        color: #2c5aa0;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hero Section */
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Layout Grids */
+    .about-content,
+    .detail-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid,
+    .system-components {
+        grid-template-columns: 1fr;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .energy-services {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /* Cards and Text Areas */
+    .about-text,
+    .detail-text,
+    .contact-info,
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .service-card {
+        padding: 2rem;
+    }
+
+    .feature,
+    .benefit-item,
+    .process-step {
+        padding: 1.5rem;
+    }
+
+    .footer-section {
+        padding: 1.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* ===================
+   SMALL MOBILE
+   Max Width: 480px
+   =================== */
+
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content,
+    .about-text,
+    .detail-text,
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        padding: 12px 24px;
+    }
+
+    /* Layout Grids */
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .energy-services {
+        grid-template-columns: 1fr;
+    }
+
+    /* Service Cards */
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .service-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .service-icon i {
+        font-size: 1.8rem;
+    }
+
+    /* Process Steps */
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    /* Contact */
+    .contact-item {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 16px;
+    }
+}
+
+/* ===================
+   ACCESSIBILITY
+   =================== */
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .glass-orb,
+    .particle {
+        display: none;
+    }
+}
+
+/* ===================
+   DARK MODE SUPPORT
+   =================== */
+
+/* Dark mode support for modern systems */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --glass-bg: rgba(255, 255, 255, 0.05);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --text-primary: #ffffff;
+        --text-secondary: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* ===================
+   BROWSER SUPPORT
+   =================== */
+
+/* Improved backdrop blur support */
+@supports (backdrop-filter: blur(20px)) {
+    .header,
+    .service-card,
+    .contact-form,
+    .footer-section {
+        backdrop-filter: blur(20px);
+    }
+}
+
+@supports not (backdrop-filter: blur(20px)) {
+    .header {
+        background: rgba(255, 255, 255, 0.95);
+    }
+    
+    .service-card,
+    .contact-form {
+        background: rgba(255, 255, 255, 0.95);
+    }
+    
+    .footer-section {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* ===================
+   PRINT STYLES
+   =================== */
+
+/* Print styles for professional documents */
+@media print {
+    .hero-background-elements,
+    .glass-orb,
+    .particle {
+        display: none !important;
+    }
+    
+    .glass-container,
+    .service-card {
+        background: white !important;
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+    }
+}
