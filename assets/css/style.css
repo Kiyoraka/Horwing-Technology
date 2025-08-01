@@ -953,7 +953,7 @@ p {
     gap: 2.5rem;
     height: fit-content;
     justify-self: center;
-    width: 500px;
+    width: 600px;
     padding: 1rem;
 }
 
@@ -995,7 +995,7 @@ p {
 
 .placeholder-item img {
     width: 100%;
-    height: 280px;
+    height: 350px;
     object-fit: cover;
     display: block;
     border-radius: 20px;

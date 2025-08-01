@@ -158,7 +158,7 @@
     }
 
     .placeholder-item img {
-        height: 250px !important;
+        height: 300px !important;
     }
 
     /* Charging Placeholder Gallery Mobile */
@@ -319,7 +319,7 @@
     }
 
     .placeholder-item img {
-        height: 220px !important;
+        height: 280px !important;
     }
 
     .charging-placeholder-gallery {
@@ -422,7 +422,7 @@
     }
 
     .placeholder-item img {
-        height: 200px !important;
+        height: 250px !important;
         border-radius: 15px !important;
     }
 
