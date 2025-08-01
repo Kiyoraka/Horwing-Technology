@@ -458,16 +458,17 @@ p {
 
 .btn-secondary {
     background: rgba(255, 255, 255, 0.1);
-    color: #2c5aa0;
-    border: 1px solid rgba(44, 90, 160, 0.3);
+    color: #42a5f5;
+    border: 1px solid rgba(66, 165, 245, 0.4);
     backdrop-filter: blur(20px);
 }
 
 .btn-secondary:hover {
-    background: rgba(44, 90, 160, 0.1);
-    color: #1e3a6f;
+    background: rgba(255, 255, 255, 0.95);
+    color: #1976d2;
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(44, 90, 160, 0.2);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 /* Section Headers */
