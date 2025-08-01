@@ -457,10 +457,11 @@ p {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: #42a5f5;
-    border: 1px solid rgba(66, 165, 245, 0.4);
+    background: rgba(255, 255, 255, 0.95);
+    color: #1976d2;
+    border: 1px solid rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary:hover {
