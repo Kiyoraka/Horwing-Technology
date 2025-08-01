@@ -1,0 +1,126 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vehicleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1976d2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#42a5f5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="truckGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="url(#vehicleGradient)" rx="10"/>
+  
+  <!-- Electric truck -->
+  <g transform="translate(150, 100)">
+    <!-- Truck body -->
+    <rect x="-70" y="-25" width="140" height="40" rx="8" fill="url(#truckGradient)"/>
+    
+    <!-- Truck cab -->
+    <rect x="-70" y="-35" width="50" height="25" rx="5" fill="url(#truckGradient)"/>
+    
+    <!-- Windows -->
+    <rect x="-65" y="-30" width="15" height="15" rx="2" fill="#42a5f5" opacity="0.7"/>
+    <rect x="-45" y="-30" width="20" height="15" rx="2" fill="#42a5f5" opacity="0.7"/>
+    
+    <!-- Wheels -->
+    <circle cx="-50" cy="20" r="12" fill="#424242"/>
+    <circle cx="-50" cy="20" r="8" fill="#616161"/>
+    <circle cx="0" cy="20" r="12" fill="#424242"/>
+    <circle cx="0" cy="20" r="8" fill="#616161"/>
+    <circle cx="50" cy="20" r="12" fill="#424242"/>
+    <circle cx="50" cy="20" r="8" fill="#616161"/>
+    
+    <!-- Electric motor indicators -->
+    <g opacity="0.8">
+      <circle cx="-50" cy="0" r="6" fill="#4caf50"/>
+      <circle cx="0" cy="0" r="6" fill="#4caf50"/>
+      <circle cx="50" cy="0" r="6" fill="#4caf50"/>
+      
+      <!-- Lightning symbols on motors -->
+      <polygon points="-50,-3 -53,3 -47,3" fill="#ffeb3b"/>
+      <polygon points="0,-3 -3,3 3,3" fill="#ffeb3b"/>
+      <polygon points="50,-3 47,3 53,3" fill="#ffeb3b"/>
+    </g>
+    
+    <!-- Battery pack -->
+    <rect x="-30" y="-10" width="60" height="15" rx="3" fill="#2e7d32" opacity="0.9"/>
+    <rect x="-25" y="-7" width="50" height="9" rx="2" fill="#4caf50"/>
+    
+    <!-- Charge level indicator -->
+    <rect x="75" y="-5" width="8" height="10" rx="2" fill="none" stroke="white" stroke-width="1"/>
+    <rect x="76" y="-3" width="6" height="6" rx="1" fill="#4caf50">
+      <animate attributeName="height" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="1;-3;1" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Electric bus -->
+  <g transform="translate(80, 50)" opacity="0.8">
+    <!-- Bus body -->
+    <rect x="-35" y="-12" width="70" height="20" rx="4" fill="url(#truckGradient)"/>
+    
+    <!-- Windows -->
+    <rect x="-30" y="-10" width="8" height="6" rx="1" fill="#42a5f5" opacity="0.7"/>
+    <rect x="-20" y="-10" width="8" height="6" rx="1" fill="#42a5f5" opacity="0.7"/>
+    <rect x="-10" y="-10" width="8" height="6" rx="1" fill="#42a5f5" opacity="0.7"/>
+    <rect x="0" y="-10" width="8" height="6" rx="1" fill="#42a5f5" opacity="0.7"/>
+    <rect x="10" y="-10" width="8" height="6" rx="1" fill="#42a5f5" opacity="0.7"/>
+    <rect x="20" y="-10" width="8" height="6" rx="1" fill="#42a5f5" opacity="0.7"/>
+    
+    <!-- Wheels -->
+    <circle cx="-25" cy="10" r="6" fill="#424242"/>
+    <circle cx="25" cy="10" r="6" fill="#424242"/>
+    
+    <!-- Electric symbol -->
+    <polygon points="0,-5 -3,1 3,1" fill="#4caf50"/>
+  </g>
+  
+  <!-- Electric forklift -->
+  <g transform="translate(220, 130)" opacity="0.8">
+    <!-- Main body -->
+    <rect x="-20" y="-15" width="40" height="25" rx="3" fill="url(#truckGradient)"/>
+    
+    <!-- Mast -->
+    <rect x="-25" y="-30" width="8" height="40" rx="2" fill="#616161"/>
+    <rect x="-22" y="-35" width="2" height="45" rx="1" fill="#9e9e9e"/>
+    
+    <!-- Forks -->
+    <rect x="-30" y="-20" width="15" height="3" rx="1" fill="#757575"/>
+    <rect x="-30" y="-15" width="15" height="3" rx="1" fill="#757575"/>
+    
+    <!-- Wheels -->
+    <circle cx="-10" cy="12" r="5" fill="#424242"/>
+    <circle cx="10" cy="12" r="5" fill="#424242"/>
+    
+    <!-- Electric indicator -->
+    <circle cx="0" cy="0" r="4" fill="#4caf50"/>
+    <polygon points="0,-2 -2,2 2,2" fill="#ffeb3b"/>
+  </g>
+  
+  <!-- Energy flow lines -->
+  <g opacity="0.6" stroke="#00e676" stroke-width="2" fill="none">
+    <path d="M 50 80 Q 100 60 150 80">
+      <animate attributeName="d" values="M 50 80 Q 100 60 150 80;M 50 80 Q 100 70 150 80;M 50 80 Q 100 60 150 80" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 150 120 Q 180 110 210 120">
+      <animate attributeName="d" values="M 150 120 Q 180 110 210 120;M 150 120 Q 180 115 210 120;M 150 120 Q 180 110 210 120" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Emission reduction indicator -->
+  <g transform="translate(30, 40)" opacity="0.7">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="-10" y1="-10" x2="10" y2="10" stroke="#f44336" stroke-width="3"/>
+    <text x="0" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">
+      Zero Emission
+    </text>
+  </g>
+  
+  <!-- Title -->
+  <text x="150" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="600">
+    Electric Vehicle Fleet
+  </text>
+</svg>

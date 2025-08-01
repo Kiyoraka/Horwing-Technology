@@ -280,6 +280,21 @@
         gap: 1rem;
     }
 
+    .electrification-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .electrification-item:nth-child(1),
+    .electrification-item:nth-child(2),
+    .electrification-item:nth-child(3),
+    .electrification-item:nth-child(4),
+    .electrification-item:nth-child(5) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
     .process-steps {
         grid-template-columns: 1fr;
     }
