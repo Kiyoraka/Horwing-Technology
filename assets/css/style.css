@@ -1738,12 +1738,17 @@ p {
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
-    color: #ffffff;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     margin: 0 -20px -20px;
     padding: 1rem 20px;
     border-radius: 0 0 20px 20px;
+}
+
+.footer-bottom p {
+    color: #ffffff !important;
+    margin: 0;
+    font-weight: 400;
 }
 
 
