@@ -310,6 +310,11 @@
         grid-row: auto;
     }
 
+    .biomass-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
     .process-steps {
         grid-template-columns: 1fr;
     }

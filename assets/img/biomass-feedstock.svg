@@ -1,0 +1,164 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="feedstockGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1976d2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#42a5f5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="organicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8bc34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4caf50;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8d6e63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5d4037;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="url(#feedstockGradient)" rx="10"/>
+  
+  <!-- Agricultural waste pile 1 -->
+  <g transform="translate(70, 130)">
+    <!-- Base pile -->
+    <ellipse cx="0" cy="20" rx="35" ry="15" fill="#8bc34a" opacity="0.8"/>
+    <ellipse cx="0" cy="15" rx="32" ry="12" fill="#aed581" opacity="0.9"/>
+    <ellipse cx="0" cy="10" rx="28" ry="10" fill="#c8e6c9"/>
+    
+    <!-- Individual stalks/waste -->
+    <g fill="#66bb6a" opacity="0.9">
+      <rect x="-15" y="-5" width="3" height="20" rx="1" transform="rotate(-15)"/>
+      <rect x="-8" y="-8" width="2" height="18" rx="1" transform="rotate(10)"/>
+      <rect x="0" y="-10" width="3" height="22" rx="1" transform="rotate(-5)"/>
+      <rect x="8" y="-6" width="2" height="16" rx="1" transform="rotate(20)"/>
+      <rect x="15" y="-4" width="3" height="18" rx="1" transform="rotate(-10)"/>
+    </g>
+    
+    <!-- Crop residue details -->
+    <g fill="#81c784" opacity="0.7">
+      <ellipse cx="-10" cy="5" rx="4" ry="2" transform="rotate(-20)"/>
+      <ellipse cx="5" cy="8" rx="3" ry="2" transform="rotate(15)"/>
+      <ellipse cx="12" cy="6" rx="4" ry="2" transform="rotate(-30)"/>
+    </g>
+    
+    <text x="0" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">
+      Agricultural Waste
+    </text>
+  </g>
+  
+  <!-- Wood chips pile -->
+  <g transform="translate(180, 140)">
+    <!-- Base pile -->
+    <ellipse cx="0" cy="15" rx="30" ry="12" fill="url(#woodGradient)" opacity="0.9"/>
+    <ellipse cx="0" cy="10" rx="27" ry="10" fill="#a1887f" opacity="0.8"/>
+    <ellipse cx="0" cy="6" rx="24" ry="8" fill="#bcaaa4"/>
+    
+    <!-- Individual wood chips -->
+    <g opacity="0.9">
+      <rect x="-12" y="-2" width="6" height="4" rx="1" fill="#8d6e63" transform="rotate(-25)"/>
+      <rect x="-5" y="-5" width="5" height="3" rx="1" fill="#6d4c41" transform="rotate(15)"/>
+      <rect x="2" y="-3" width="7" height="4" rx="1" fill="#8d6e63" transform="rotate(-10)"/>
+      <rect x="10" y="-1" width="4" height="3" rx="1" fill="#5d4037" transform="rotate(30)"/>
+      <rect x="-8" y="2" width="5" height="3" rx="1" fill="#6d4c41" transform="rotate(-45)"/>
+      <rect x="5" y="4" width="6" height="3" rx="1" fill="#8d6e63" transform="rotate(20)"/>
+    </g>
+    
+    <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">
+      Wood Chips
+    </text>
+  </g>
+  
+  <!-- Organic waste pile -->
+  <g transform="translate(240, 120)">
+    <!-- Base pile -->
+    <ellipse cx="0" cy="15" rx="25" ry="10" fill="#689f38" opacity="0.8"/>
+    <ellipse cx="0" cy="12" rx="22" ry="8" fill="#7cb342" opacity="0.9"/>
+    <ellipse cx="0" cy="8" rx="18" ry="6" fill="#8bc34a"/>
+    
+    <!-- Organic matter pieces -->
+    <g opacity="0.8">
+      <circle cx="-8" cy="2" r="3" fill="#4caf50"/>
+      <circle cx="0" cy="0" r="2.5" fill="#66bb6a"/>
+      <circle cx="6" cy="3" r="2" fill="#4caf50"/>
+      <circle cx="-4" cy="6" r="2.5" fill="#66bb6a"/>
+      <circle cx="8" cy="8" r="2" fill="#4caf50"/>
+    </g>
+    
+    <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">
+      Organic Waste
+    </text>
+  </g>
+  
+  <!-- Processing arrows -->
+  <g opacity="0.7" stroke="white" stroke-width="3" fill="white">
+    <path d="M 105 130 L 135 130"/>
+    <polygon points="135,125 145,130 135,135" fill="white"/>
+    
+    <path d="M 210 140 L 225 130"/>
+    <polygon points="225,125 230,130 225,135" fill="white"/>
+  </g>
+  
+  <!-- Collection truck -->
+  <g transform="translate(50, 90)" opacity="0.8">
+    <!-- Truck body -->
+    <rect x="-15" y="-8" width="30" height="16" rx="3" fill="#607d8b"/>
+    <rect x="-12" y="-6" width="24" height="12" rx="2" fill="#78909c"/>
+    
+    <!-- Cab -->
+    <rect x="-15" y="-8" width="10" height="12" rx="2" fill="#607d8b"/>
+    <rect x="-13" y="-6" width="6" height="8" rx="1" fill="#42a5f5" opacity="0.7"/>
+    
+    <!-- Wheels -->
+    <circle cx="-8" cy="10" r="4" fill="#424242"/>
+    <circle cx="8" cy="10" r="4" fill="#424242"/>
+    
+    <!-- Load indicator -->
+    <rect x="-5" y="-4" width="12" height="8" rx="1" fill="#8bc34a" opacity="0.8"/>
+  </g>
+  
+  <!-- Conveyor system -->
+  <g transform="translate(150, 70)" opacity="0.6">
+    <rect x="-40" y="0" width="80" height="6" rx="3" fill="#616161"/>
+    <rect x="-35" y="2" width="10" height="2" rx="1" fill="#8bc34a">
+      <animate attributeName="x" values="-35;25;-35" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-20" y="2" width="8" height="2" rx="1" fill="#8d6e63">
+      <animate attributeName="x" values="-20;40;-20" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Processing facility -->
+  <g transform="translate(200, 50)" opacity="0.7">
+    <rect x="-20" y="0" width="40" height="25" rx="3" fill="#546e7a"/>
+    <rect x="-15" y="5" width="30" height="15" rx="2" fill="#607d8b"/>
+    <rect x="-10" y="8" width="20" height="3" rx="1" fill="#42a5f5"/>
+    <rect x="-10" y="13" width="20" height="3" rx="1" fill="#42a5f5"/>
+    <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">
+      Processing
+    </text>
+  </g>
+  
+  <!-- Sustainability indicators -->
+  <g transform="translate(30, 50)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="white" stroke-width="2" opacity="0.8"/>
+    <path d="M -8 -3 Q 0 -8 8 -3 Q 0 2 -8 -3" fill="#4caf50"/>
+    <text x="0" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">
+      100% Renewable
+    </text>
+  </g>
+  
+  <!-- Efficiency indicator -->
+  <g transform="translate(270, 50)" opacity="0.8">
+    <rect x="-15" y="-8" width="30" height="16" rx="3" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="1"/>
+    <text x="0" y="-12" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">
+      Energy Recovery
+    </text>
+    <text x="0" y="0" text-anchor="middle" fill="#4caf50" font-family="Arial, sans-serif" font-size="10" font-weight="600">
+      85%
+    </text>
+  </g>
+  
+  <!-- Title -->
+  <text x="150" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="600">
+    Biomass Feedstock Collection
+  </text>
+</svg>
