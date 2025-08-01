@@ -831,20 +831,25 @@ p {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .service-card {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
-    padding: 3rem 2.5rem;
+    padding: 2.5rem 2rem;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card::before {
