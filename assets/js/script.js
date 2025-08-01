@@ -306,12 +306,21 @@ function removeNotification(notification) {
 
 // Initialize animations
 function initAnimations() {
-    // Parallax effect for hero section
+    // Improved parallax effect for hero section
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero');
         if (hero) {
-            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            const heroHeight = hero.offsetHeight;
+            const heroBottom = hero.offsetTop + heroHeight;
+            
+            // Only apply parallax when hero section is visible
+            if (scrolled < heroBottom) {
+                const parallaxOffset = Math.min(scrolled * 0.3, heroHeight * 0.2);
+                hero.style.transform = `translateY(${parallaxOffset}px)`;
+            } else {
+                hero.style.transform = 'translateY(0)';
+            }
         }
     });
 
