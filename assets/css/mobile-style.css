@@ -172,6 +172,17 @@
         height: 250px !important;
     }
 
+    /* Biomass Placeholder Gallery Mobile */
+    .biomass-placeholder-gallery {
+        width: 100% !important;
+        max-width: 400px;
+        gap: 1.5rem !important;
+    }
+
+    .biomass-placeholder-item img {
+        height: 250px !important;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -319,6 +330,15 @@
     .charging-placeholder-item img {
         height: 220px !important;
     }
+
+    .biomass-placeholder-gallery {
+        width: 90% !important;
+        max-width: 380px;
+    }
+
+    .biomass-placeholder-item img {
+        height: 220px !important;
+    }
 }
 
 /* ===================
@@ -418,6 +438,22 @@
     }
 
     .charging-placeholder-item img {
+        height: 200px !important;
+        border-radius: 15px !important;
+    }
+
+    .biomass-placeholder-gallery {
+        width: 100% !important;
+        max-width: 350px;
+        gap: 1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .biomass-placeholder-item {
+        padding: 0.5rem !important;
+    }
+
+    .biomass-placeholder-item img {
         height: 200px !important;
         border-radius: 15px !important;
     }
