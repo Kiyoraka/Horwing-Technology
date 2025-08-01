@@ -1,0 +1,53 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1976d2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#42a5f5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e3f2fd;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#logoGradient)" stroke="white" stroke-width="2"/>
+  
+  <!-- Inner circle for depth -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  
+  <!-- Letter H stylized -->
+  <g transform="translate(100, 100)">
+    <!-- Left vertical line of H -->
+    <rect x="-35" y="-30" width="8" height="60" fill="url(#textGradient)" rx="4"/>
+    
+    <!-- Right vertical line of H -->
+    <rect x="27" y="-30" width="8" height="60" fill="url(#textGradient)" rx="4"/>
+    
+    <!-- Horizontal line of H -->
+    <rect x="-27" y="-4" width="54" height="8" fill="url(#textGradient)" rx="4"/>
+    
+    <!-- Decorative elements -->
+    <circle cx="-25" cy="-25" r="3" fill="white" opacity="0.8"/>
+    <circle cx="25" cy="-25" r="3" fill="white" opacity="0.8"/>
+    <circle cx="0" cy="25" r="3" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Company text curved around -->
+  <defs>
+    <path id="topArc" d="M 40 100 A 60 60 0 0 1 160 100"/>
+    <path id="bottomArc" d="M 160 100 A 60 60 0 0 1 40 100"/>
+  </defs>
+  
+  <text font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="white" opacity="0.9">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      HORWING
+    </textPath>
+  </text>
+  
+  <text font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="white" opacity="0.9">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      TECHNOLOGY
+    </textPath>
+  </text>
+</svg>
