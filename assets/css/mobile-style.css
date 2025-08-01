@@ -142,6 +142,52 @@
         grid-template-columns: 1fr;
     }
 
+    /* SKD Details Mobile Layout */
+    .detail-content-vertical {
+        gap: 2rem;
+    }
+
+    .detail-content-box {
+        padding: 2rem;
+    }
+
+    .detail-header h2 {
+        font-size: 2rem;
+    }
+
+    .benefits-grid-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .benefit-item-compact {
+        padding: 1.5rem;
+    }
+
+    .timeline-section {
+        padding: 2rem;
+    }
+
+    .timeline-horizontal {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .timeline-connector {
+        width: 4px;
+        height: 30px;
+        transform: rotate(90deg);
+    }
+
+    .timeline-connector::before {
+        right: -4px;
+        top: 22px;
+        border-left: 6px solid #1e88e5;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        transform: rotate(90deg);
+    }
+
     .process-steps {
         grid-template-columns: 1fr;
     }
@@ -235,6 +281,19 @@
 
     .energy-services {
         grid-template-columns: 1fr;
+    }
+
+    /* Small Mobile - Benefits Grid */
+    .benefits-grid-row {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-item-compact {
+        padding: 1.5rem 1rem;
+    }
+
+    .timeline-item-horizontal {
+        padding: 2rem 1.5rem;
     }
 
     /* Service Cards */
