@@ -150,6 +150,17 @@
         gap: 1.5rem;
     }
 
+    /* Electrification Placeholder Gallery Mobile */
+    .electrification-placeholder-gallery {
+        width: 100% !important;
+        max-width: 400px;
+        gap: 1.5rem !important;
+    }
+
+    .placeholder-item img {
+        height: 250px !important;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -279,6 +290,15 @@
     .feature {
         padding: 2rem 1.5rem;
     }
+
+    .electrification-placeholder-gallery {
+        width: 90% !important;
+        max-width: 380px;
+    }
+
+    .placeholder-item img {
+        height: 220px !important;
+    }
 }
 
 /* ===================
@@ -348,6 +368,22 @@
     .electrification-item:nth-child(5) {
         grid-column: 1;
         grid-row: auto;
+    }
+
+    .electrification-placeholder-gallery {
+        width: 100% !important;
+        max-width: 350px;
+        gap: 1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .placeholder-item {
+        padding: 0.5rem !important;
+    }
+
+    .placeholder-item img {
+        height: 200px !important;
+        border-radius: 15px !important;
     }
 
     .charging-gallery {
