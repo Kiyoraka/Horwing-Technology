@@ -1685,6 +1685,13 @@ p {
     text-align: center;
 }
 
+.footer-section p {
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0.9;
+}
+
 .footer-section ul {
     list-style: none;
 }
