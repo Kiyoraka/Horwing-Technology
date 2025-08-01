@@ -950,7 +950,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
     height: fit-content;
     justify-self: center;
     width: 500px;
@@ -995,7 +995,7 @@ p {
 
 .placeholder-item img {
     width: 100%;
-    height: 220px;
+    height: 280px;
     object-fit: cover;
     display: block;
     border-radius: 20px;
