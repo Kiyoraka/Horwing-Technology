@@ -1325,7 +1325,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 25px rgba(44, 90, 160, 0.3);
     transition: all 0.3s ease;
