@@ -814,35 +814,36 @@ p {
 
 /* About Gallery */
 .about-gallery {
-    margin-top: 0;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
-    position: relative;
+    gap: 0.8rem;
+    max-width: 280px;
+    justify-self: start;
 }
 
 .gallery-item {
     position: relative;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item::before {
     content: '';
     position: absolute;
-    top: -15px;
-    left: -15px;
-    right: -15px;
-    bottom: -15px;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(20px);
-    border-radius: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    z-index: -1;
-    opacity: 1;
+    border-radius: 15px;
+    z-index: 1;
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
@@ -857,9 +858,10 @@ p {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 85px;
+    object-fit: cover;
     display: block;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 /* Electrification Gallery */
