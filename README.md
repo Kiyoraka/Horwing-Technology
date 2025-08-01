@@ -2,7 +2,7 @@
 ## Energy Solutions Website
 
 **Version:** 1.0.0  
-**Last Updated:** December 2024
+**Last Updated:** August 2025
 
 ## 📋 Description
 
