@@ -736,9 +736,9 @@ p {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
 }
 
 .about-text {
@@ -814,13 +814,15 @@ p {
 
 /* About Gallery */
 .about-gallery {
-    margin-top: 2rem;
+    margin-top: 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 0.8rem;
-    max-width: 280px;
-    justify-self: start;
+    gap: 1.5rem;
+    height: fit-content;
+    max-height: 600px;
+    justify-self: center;
+    width: 280px;
 }
 
 .gallery-item {
@@ -858,7 +860,7 @@ p {
 
 .gallery-item img {
     width: 100%;
-    height: 85px;
+    height: 160px;
     object-fit: cover;
     display: block;
     border-radius: 15px;
