@@ -133,6 +133,23 @@
         gap: 2rem;
     }
 
+    /* About Section Mobile Adjustments */
+    .about-gallery {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 0 auto;
+        gap: 1.5rem !important;
+    }
+
+    .gallery-item img {
+        height: 250px !important;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -240,6 +257,31 @@
 }
 
 /* ===================
+   MEDIUM MOBILE
+   Max Width: 640px
+   =================== */
+
+@media (max-width: 640px) {
+    .about-gallery {
+        width: 90% !important;
+        max-width: 380px;
+    }
+
+    .gallery-item img {
+        height: 220px !important;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .feature {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* ===================
    SMALL MOBILE
    Max Width: 480px
    =================== */
@@ -273,11 +315,24 @@
     /* Layout Grids */
     .about-features {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .about-gallery {
         grid-template-columns: 1fr;
         gap: 1rem;
+        width: 100% !important;
+        max-width: 350px;
+        padding: 0.5rem !important;
+    }
+
+    .gallery-item {
+        padding: 0.5rem !important;
+    }
+
+    .gallery-item img {
+        height: 200px !important;
+        border-radius: 15px !important;
     }
 
     .electrification-gallery {
