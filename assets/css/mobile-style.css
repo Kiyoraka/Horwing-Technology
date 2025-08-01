@@ -158,7 +158,7 @@
     }
 
     .placeholder-item img {
-        height: 250px !important;
+        height: 200px !important;
     }
 
     .services-grid {
@@ -297,7 +297,7 @@
     }
 
     .placeholder-item img {
-        height: 220px !important;
+        height: 180px !important;
     }
 }
 
@@ -382,7 +382,7 @@
     }
 
     .placeholder-item img {
-        height: 200px !important;
+        height: 160px !important;
         border-radius: 15px !important;
     }
 
