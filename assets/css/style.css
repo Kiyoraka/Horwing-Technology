@@ -817,7 +817,8 @@ p {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
+    max-width: 500px;
 }
 
 .gallery-item {
@@ -855,7 +856,8 @@ p {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 120px;
+    object-fit: cover;
     display: block;
     border-radius: 15px;
 }
