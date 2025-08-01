@@ -1,0 +1,3 @@
+[33m8a89bfd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m feat: update about section layout - remove placeholder, arrange 3 images vertically with proper sizing
+[33md301f9d[m feat: change about gallery to vertical layout (3 rows, 1 column) with optimized sizing
+[33m8053ec2[m feat: remove placeholder image and arrange gallery images in 3-row layout with placeholder image size
