@@ -1590,6 +1590,158 @@ p {
     margin: 0;
 }
 
+/* Redesigned Charging Station Section */
+.charging-redesigned {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.charging-image-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.charging-image-header img {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--glass-shadow);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    padding: 1.5rem;
+    transition: all var(--transition-normal);
+}
+
+.charging-image-header img:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glass-shadow-hover);
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+}
+
+.charging-content-box {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--glass-shadow);
+    transition: all var(--transition-normal);
+}
+
+.charging-content-box:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow-hover);
+}
+
+.charging-content-box h2 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.charging-content-box > p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.charging-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Redesigned Biomass Power Section */
+.biomass-redesigned {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.biomass-image-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.biomass-image-header img {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--glass-shadow);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    padding: 1.5rem;
+    transition: all var(--transition-normal);
+}
+
+.biomass-image-header img:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glass-shadow-hover);
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+}
+
+.biomass-content-box {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--glass-shadow);
+    transition: all var(--transition-normal);
+}
+
+.biomass-content-box:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow-hover);
+}
+
+.biomass-content-box h2 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.biomass-content-box > p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.biomass-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
 /* New Vertical Layout for SKD Details */
 .detail-content-vertical {
     display: flex;
@@ -2541,6 +2693,54 @@ p {
     .benefit-item {
         padding: 1.2rem;
     }
+    
+    /* Responsive for redesigned charging section */
+    .charging-redesigned {
+        max-width: 100%;
+        gap: 1.5rem;
+    }
+    
+    .charging-image-header img {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
+    .charging-content-box {
+        padding: 1.5rem;
+    }
+    
+    .charging-content-box h2 {
+        font-size: 1.8rem;
+    }
+    
+    .charging-benefits {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    /* Responsive for redesigned biomass section */
+    .biomass-redesigned {
+        max-width: 100%;
+        gap: 1.5rem;
+    }
+    
+    .biomass-image-header img {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
+    .biomass-content-box {
+        padding: 1.5rem;
+    }
+    
+    .biomass-content-box h2 {
+        font-size: 1.8rem;
+    }
+    
+    .biomass-benefits {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2586,5 +2786,47 @@ p {
     
     .benefit-item p {
         font-size: 0.9rem;
+    }
+    
+    /* Responsive for redesigned charging section */
+    .charging-redesigned {
+        gap: 1rem;
+    }
+    
+    .charging-image-header img {
+        padding: 0.8rem;
+    }
+    
+    .charging-content-box {
+        padding: 1rem;
+    }
+    
+    .charging-content-box h2 {
+        font-size: 1.6rem;
+    }
+    
+    .charging-content-box > p {
+        font-size: 1rem;
+    }
+    
+    /* Responsive for redesigned biomass section */
+    .biomass-redesigned {
+        gap: 1rem;
+    }
+    
+    .biomass-image-header img {
+        padding: 0.8rem;
+    }
+    
+    .biomass-content-box {
+        padding: 1rem;
+    }
+    
+    .biomass-content-box h2 {
+        font-size: 1.6rem;
+    }
+    
+    .biomass-content-box > p {
+        font-size: 1rem;
     }
 }
