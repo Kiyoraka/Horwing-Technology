@@ -266,6 +266,52 @@
         gap: 2rem;
     }
 
+    /* Carousel Mobile Styles */
+    .detail-image-carousel {
+        max-width: 100%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .carousel-container {
+        padding: 0.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .carousel-track {
+        height: 250px;
+        order: 2;
+    }
+
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .carousel-prev {
+        left: 0.5rem;
+    }
+
+    .carousel-next {
+        right: 0.5rem;
+    }
+
+    .carousel-indicators {
+        margin-top: 0.5rem;
+        order: 3;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
+
     .detail-content-box {
         padding: 2rem;
     }

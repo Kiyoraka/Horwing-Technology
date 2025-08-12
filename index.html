@@ -175,9 +175,36 @@
     <section id="skd-details" class="solution-detail">
         <div class="container">
             <div class="detail-content-vertical">
-                <!-- Image Section -->
-                <div class="detail-image-top">
-                    <img src="assets/img/skd-assembly.svg" alt="SKD Assembly Factory">
+                <!-- Image Carousel Section -->
+                <div class="detail-image-carousel">
+                    <div class="carousel-container">
+                        <button class="carousel-arrow carousel-prev" aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="assets/img/skd-assembly.svg" alt="SKD Assembly Factory - Overview">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/skd-assembly.svg" alt="SKD Assembly Factory - Production Line">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/skd-assembly.svg" alt="SKD Assembly Factory - Quality Control">
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-arrow carousel-next" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0" aria-label="View image 1"></button>
+                        <button class="indicator" data-slide="1" aria-label="View image 2"></button>
+                        <button class="indicator" data-slide="2" aria-label="View image 3"></button>
+                    </div>
                 </div>
                 
                 <!-- Content Box -->
