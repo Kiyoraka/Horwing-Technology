@@ -768,12 +768,15 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 .feature:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .feature i {
@@ -2209,7 +2212,6 @@ p {
 
 /* Glass shimmer effect */
 .service-card::after,
-.feature::after,
 .btn::after {
     content: '';
     position: absolute;
@@ -2222,8 +2224,7 @@ p {
     z-index: 1;
 }
 
-.service-card:hover::after,
-.feature:hover::after {
+.service-card:hover::after {
     animation: glassShimmer 1.5s ease-in-out;
 }
 
