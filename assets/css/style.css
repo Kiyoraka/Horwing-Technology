@@ -51,6 +51,166 @@
     --z-modal: 1050;
     --z-popover: 1060;
     --z-tooltip: 1070;
+    
+    /* Theme Variables (Default Blue) */
+    --theme-primary: #2c5aa0;
+    --theme-primary-light: #1976d2;
+    --theme-primary-dark: #1a365d;
+    --theme-accent: #64b5f6;
+    --theme-accent-light: #90caf9;
+}
+
+/* Theme Color Schemes */
+body[data-theme="blue"] {
+    --theme-primary: #2c5aa0;
+    --theme-primary-light: #1976d2;
+    --theme-primary-dark: #1a365d;
+    --theme-accent: #64b5f6;
+    --theme-accent-light: #90caf9;
+}
+
+body[data-theme="green"] {
+    --theme-primary: #2e7d32;
+    --theme-primary-light: #4caf50;
+    --theme-primary-dark: #1b5e20;
+    --theme-accent: #81c784;
+    --theme-accent-light: #a5d6a7;
+}
+
+body[data-theme="purple"] {
+    --theme-primary: #7b1fa2;
+    --theme-primary-light: #9c27b0;
+    --theme-primary-dark: #4a148c;
+    --theme-accent: #ba68c8;
+    --theme-accent-light: #ce93d8;
+}
+
+body[data-theme="orange"] {
+    --theme-primary: #f57c00;
+    --theme-primary-light: #ff9800;
+    --theme-primary-dark: #e65100;
+    --theme-accent: #ffb74d;
+    --theme-accent-light: #ffcc02;
+}
+
+body[data-theme="red"] {
+    --theme-primary: #c62828;
+    --theme-primary-light: #f44336;
+    --theme-primary-dark: #b71c1c;
+    --theme-accent: #ef5350;
+    --theme-accent-light: #e57373;
+}
+
+body[data-theme="teal"] {
+    --theme-primary: #00695c;
+    --theme-primary-light: #009688;
+    --theme-primary-dark: #004d40;
+    --theme-accent: #4db6ac;
+    --theme-accent-light: #80cbc4;
+}
+
+body[data-theme="indigo"] {
+    --theme-primary: #303f9f;
+    --theme-primary-light: #3f51b5;
+    --theme-primary-dark: #1a237e;
+    --theme-accent: #7986cb;
+    --theme-accent-light: #9fa8da;
+}
+
+/* Theme Selector Styles */
+.theme-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+}
+
+.theme-toggle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--theme-primary);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1);
+}
+
+.theme-wheel {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px) scale(0.8);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    min-width: 120px;
+}
+
+.theme-wheel.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.theme-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-option:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.theme-option.active {
+    border-color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.theme-option::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+}
+
+.theme-option.active::after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* Reset and Base Styles */
@@ -445,13 +605,13 @@ p {
 }
 
 .btn-primary {
-    background: rgba(44, 90, 160, 0.8);
+    background: var(--theme-primary);
     color: white;
     box-shadow: 0 8px 32px rgba(44, 90, 160, 0.3);
 }
 
 .btn-primary:hover {
-    background: rgba(44, 90, 160, 0.9);
+    background: var(--theme-primary-light);
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(44, 90, 160, 0.4);
 }
@@ -591,7 +751,7 @@ p {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(25, 118, 210, 0.95) 0%, rgba(66, 165, 245, 0.9) 100%);
+    background: linear-gradient(135deg, var(--theme-primary-light) 0%, var(--theme-accent) 100%);
     padding: 120px 0 80px;
     color: white;
     min-height: 100vh;
