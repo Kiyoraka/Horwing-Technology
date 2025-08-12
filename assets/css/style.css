@@ -1708,9 +1708,10 @@ p {
 }
 
 .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
     gap: 1.5rem;
+    justify-content: space-between;
 }
 
 .benefit-card {
@@ -1725,6 +1726,8 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
     min-height: 180px;
+    flex: 1;
+    max-width: calc(25% - 1.125rem);
 }
 
 .benefit-card:hover {
