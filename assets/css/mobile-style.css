@@ -223,6 +223,32 @@
 
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .service-card {
+        min-height: 500px;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+        min-height: 3rem;
+    }
+
+    .service-card > p {
+        font-size: 0.95rem;
+        min-height: 4rem;
+    }
+
+    .service-benefits {
+        min-height: 160px;
+        padding: 1rem;
+    }
+
+    .service-benefits li {
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
     }
 
     .benefits-grid,
