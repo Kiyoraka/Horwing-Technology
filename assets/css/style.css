@@ -54,7 +54,7 @@
     
     /* Theme Variables (Default Blue) */
     --theme-primary: #2c5aa0;
-    --theme-primary-light: var(--theme-primary-light);
+    --theme-primary-light: #1976d2;
     --theme-primary-dark: #1a365d;
     --theme-accent: #64b5f6;
     --theme-accent-light: #90caf9;
@@ -63,7 +63,7 @@
 /* Theme Color Schemes */
 body[data-theme="blue"] {
     --theme-primary: #2c5aa0;
-    --theme-primary-light: var(--theme-primary-light);
+    --theme-primary-light: #1976d2;
     --theme-primary-dark: #1a365d;
     --theme-accent: #64b5f6;
     --theme-accent-light: #90caf9;
