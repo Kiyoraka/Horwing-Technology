@@ -352,6 +352,78 @@
         line-height: 1.3;
     }
 
+    /* Charging Station Mobile Styles */
+    .charging-header h2 {
+        font-size: 2rem;
+    }
+
+    .charging-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .components-section h3,
+    .features-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .component-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .component-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .component-content h4 {
+        font-size: 1.1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feature-icon i {
+        font-size: 1.3rem;
+    }
+
+    .charging-advantages {
+        padding: 2rem;
+    }
+
+    .charging-advantages h3 {
+        font-size: 1.5rem;
+    }
+
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .advantage-card {
+        padding: 1.5rem;
+        min-height: 160px;
+    }
+
+    .advantage-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .advantage-icon i {
+        font-size: 1.2rem;
+    }
+
     /* Mobile Carousel Styles */
     .image-carousel {
         margin: 0 auto 2rem auto;
