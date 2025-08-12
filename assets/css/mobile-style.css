@@ -324,32 +324,32 @@
     }
 
     .benefits-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
     }
 
     .benefit-card {
-        padding: 2rem 1.5rem;
-        min-height: 180px;
-        gap: 1rem;
+        padding: 1rem 0.5rem;
+        min-height: 140px;
+        gap: 0.5rem;
     }
 
     .benefit-icon {
-        width: 60px;
-        height: 60px;
-        border-radius: 15px;
+        width: 35px;
+        height: 35px;
     }
 
     .benefit-icon i {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     .benefit-card h4 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .benefit-card p {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
+        line-height: 1.2;
     }
 
     /* Mobile Carousel Styles */
@@ -481,7 +481,31 @@
 
 @media (max-width: 480px) {
     .benefits-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.8rem;
+    }
+
+    .benefit-card {
+        padding: 1.2rem 0.8rem;
+        min-height: 150px;
+    }
+
+    .benefit-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .benefit-icon i {
+        font-size: 1rem;
+    }
+
+    .benefit-card h4 {
+        font-size: 0.95rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.8rem;
+        line-height: 1.3;
     }
 }
 
