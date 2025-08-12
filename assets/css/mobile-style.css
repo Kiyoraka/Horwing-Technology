@@ -266,6 +266,81 @@
         gap: 2rem;
     }
 
+    /* Electrification Mobile Styles */
+    .electrification-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .electrification-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .process-section h3,
+    .applications-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .process-step {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .step-content h4 {
+        font-size: 1.1rem;
+    }
+
+    .applications-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .app-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .app-icon i {
+        font-size: 1.3rem;
+    }
+
+    .benefits-section {
+        padding: 2rem;
+    }
+
+    .benefits-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .benefit-card {
+        padding: 1rem;
+    }
+
+    .benefit-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .benefit-icon i {
+        font-size: 1rem;
+    }
+
     /* Mobile Carousel Styles */
     .image-carousel {
         margin: 0 auto 2rem auto;
