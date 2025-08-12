@@ -892,14 +892,14 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(66, 165, 245, 0.2) 0%, rgba(25, 118, 210, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
     border-radius: 30px;
     z-index: -1;
     transition: all 0.4s ease;
 }
 
 .hero-image:hover::before {
-    background: linear-gradient(135deg, rgba(66, 165, 245, 0.3) 0%, rgba(25, 118, 210, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     transform: scale(1.02);
 }
 
@@ -910,7 +910,7 @@ p {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4),
-                0 10px 30px rgba(25, 118, 210, 0.3);
+                0 10px 30px rgba(0, 0, 0, 0.15);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     z-index: 1;
@@ -919,7 +919,7 @@ p {
 .hero-image:hover img {
     transform: scale(1.03) translateY(-5px);
     box-shadow: 0 35px 90px rgba(0, 0, 0, 0.5),
-                0 15px 40px rgba(25, 118, 210, 0.4);
+                0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeInRight {
