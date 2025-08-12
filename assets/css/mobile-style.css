@@ -576,8 +576,9 @@
     .theme-wheel {
         top: 55px;
         padding: 12px;
-        gap: 8px;
-        min-width: 100px;
+        gap: 6px;
+        min-width: 140px;
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .theme-option {
@@ -602,8 +603,9 @@
     .theme-wheel {
         top: 50px;
         padding: 10px;
-        gap: 6px;
-        min-width: 90px;
+        gap: 5px;
+        min-width: 120px;
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .theme-option {

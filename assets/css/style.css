@@ -117,6 +117,38 @@ body[data-theme="indigo"] {
     --theme-accent-light: #9fa8da;
 }
 
+body[data-theme="maroon"] {
+    --theme-primary: #8e0e00;
+    --theme-primary-light: #c62828;
+    --theme-primary-dark: #6a0000;
+    --theme-accent: #ef5350;
+    --theme-accent-light: #e57373;
+}
+
+body[data-theme="navy"] {
+    --theme-primary: #1a237e;
+    --theme-primary-light: #3949ab;
+    --theme-primary-dark: #000051;
+    --theme-accent: #5c6bc0;
+    --theme-accent-light: #7986cb;
+}
+
+body[data-theme="charcoal"] {
+    --theme-primary: #263238;
+    --theme-primary-light: #455a64;
+    --theme-primary-dark: #000a12;
+    --theme-accent: #607d8b;
+    --theme-accent-light: #90a4ae;
+}
+
+body[data-theme="emerald"] {
+    --theme-primary: #00695c;
+    --theme-primary-light: #00897b;
+    --theme-primary-dark: #004d40;
+    --theme-accent: #26a69a;
+    --theme-accent-light: #4db6ac;
+}
+
 /* Theme Selector Styles */
 .theme-selector {
     position: fixed;
@@ -157,15 +189,15 @@ body[data-theme="indigo"] {
     border-radius: 25px;
     padding: 15px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px) scale(0.8);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-    min-width: 120px;
+    min-width: 160px;
 }
 
 .theme-wheel.active {
