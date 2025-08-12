@@ -1459,7 +1459,136 @@ p {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* Electrification Single Image */
+.electrification-single-image {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    justify-self: center;
+    width: 600px;
+    padding: 1rem;
+}
 
+.electrification-single-image img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+}
+
+/* Redesigned Electrification Section */
+.electrification-redesigned {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.electrification-image-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.electrification-image-header img {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--glass-shadow);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    padding: 1.5rem;
+    transition: all var(--transition-normal);
+}
+
+.electrification-image-header img:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glass-shadow-hover);
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+}
+
+.electrification-content-box {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--glass-shadow);
+    transition: all var(--transition-normal);
+}
+
+.electrification-content-box:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow-hover);
+}
+
+.electrification-content-box h2 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.electrification-content-box > p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.electrification-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.benefit-item {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(25, 118, 210, 0.1);
+    transition: all var(--transition-normal);
+}
+
+.benefit-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(25, 118, 210, 0.15);
+    border-color: rgba(25, 118, 210, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.benefit-item h4 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
 
 /* New Vertical Layout for SKD Details */
 .detail-content-vertical {
@@ -2345,237 +2474,117 @@ p {
     outline-offset: 2px;
 }
 
-
-
-/* Vehicle Electrification Modification - New Layout */
-.detail-image-top {
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.image-header {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    border-radius: 20px;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: white;
-    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
-}
-
-.image-header h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.image-header p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-}
-
-.header-graphic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.header-graphic img {
-    width: 200px;
-    height: 150px;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
-}
-
-.detail-content-box {
-    background: white;
-    border-radius: 20px;
-    padding: 3rem 2rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-}
-
-.detail-content-box h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1e40af;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.detail-content-box > p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #374151;
-    text-align: center;
-    margin-bottom: 2.5rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.detail-content-box h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #1f2937;
-    text-align: center;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.benefit-card {
-    background: #f8fafc;
-    border-radius: 15px;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s ease;
-}
-
-.benefit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    border-color: #2563eb;
-}
-
-.benefit-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.benefit-card h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    line-height: 1.3;
-}
-
-.benefit-card p {
-    font-size: 0.9rem;
-    color: #6b7280;
-    line-height: 1.5;
-}
-
-.application-list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.application-list li {
-    background: #f1f5f9;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    color: #374151;
-    font-weight: 500;
-    border-left: 4px solid #2563eb;
-    transition: all 0.3s ease;
-}
-
-.application-list li:hover {
-    background: #e2e8f0;
-    transform: translateX(5px);
-}
-
-/* Responsive Design for Vehicle Electrification */
+/* Responsive Design for Vehicle Electrification Section */
 @media (max-width: 1200px) {
-    .benefits-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
     
-    .application-list {
-        grid-template-columns: 1fr;
+    .electrification-single-image {
+        width: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .electrification-single-image {
+        width: 450px;
     }
 }
 
 @media (max-width: 768px) {
-    .image-header {
-        padding: 2rem 1.5rem;
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
-    .image-header h2 {
-        font-size: 2rem;
+    .detail-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
-    .image-header p {
-        font-size: 1rem;
+    .electrification-single-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
     
-    .header-graphic img {
-        width: 150px;
-        height: 120px;
+    /* Responsive for redesigned electrification section */
+    .electrification-redesigned {
+        max-width: 100%;
+        gap: 1.5rem;
     }
     
-    .detail-content-box {
-        padding: 2rem 1.5rem;
+    .electrification-image-header img {
+        max-width: 100%;
+        padding: 1rem;
     }
     
-    .detail-content-box h2 {
-        font-size: 2rem;
+    .electrification-content-box {
+        padding: 1.5rem;
     }
     
-    .detail-content-box h3 {
-        font-size: 1.5rem;
+    .electrification-content-box h2 {
+        font-size: 1.8rem;
     }
     
-    .benefits-grid {
+    .electrification-benefits {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
     
-    .benefit-card {
-        padding: 1.5rem 1rem;
+    .benefit-item {
+        padding: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
-    .image-header {
-        padding: 1.5rem 1rem;
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
-    .image-header h2 {
-        font-size: 1.5rem;
+    .electrification-single-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
     
-    .header-graphic img {
-        width: 120px;
-        height: 100px;
+    /* Responsive for redesigned electrification section */
+    .electrification-redesigned {
+        gap: 1rem;
     }
     
-    .detail-content-box {
-        padding: 1.5rem 1rem;
+    .electrification-image-header img {
+        padding: 0.8rem;
     }
     
-    .detail-content-box h2 {
-        font-size: 1.5rem;
-    }
-    
-    .benefit-card {
+    .electrification-content-box {
         padding: 1rem;
     }
     
-    .benefit-icon {
-        font-size: 2.5rem;
+    .electrification-content-box h2 {
+        font-size: 1.6rem;
+    }
+    
+    .electrification-content-box > p {
+        font-size: 1rem;
+    }
+    
+    .benefit-item {
+        padding: 1rem;
+    }
+    
+    .benefit-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .benefit-item p {
+        font-size: 0.9rem;
     }
 }
