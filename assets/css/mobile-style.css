@@ -228,45 +228,29 @@
     }
 
     .service-card {
-        height: 650px;
-        grid-template-rows: 120px 60px 110px 1fr 60px;
-        gap: 1rem;
-        padding: 2rem;
-    }
-
-    .service-icon {
-        width: 80px;
-        height: 80px;
-    }
-
-    .service-icon i {
-        font-size: 2.2rem;
+        min-height: 500px;
     }
 
     .service-card h3 {
-        font-size: 1.3rem;
-        height: 60px;
+        font-size: 1.1rem;
+        min-height: 3rem;
+        line-height: 1.1;
+        padding: 0 0.25rem;
     }
 
     .service-card > p {
-        font-size: 1rem;
-        height: 110px;
-        padding: 0 0.5rem;
+        font-size: 0.95rem;
+        min-height: 4rem;
     }
 
     .service-benefits {
-        padding: 1.5rem;
+        min-height: 160px;
+        padding: 1rem;
     }
 
     .service-benefits li {
         padding: 0.5rem 0;
-        font-size: 0.95rem;
-        padding-left: 1.8rem;
-    }
-
-    .service-link {
-        height: 55px;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .benefits-grid,
