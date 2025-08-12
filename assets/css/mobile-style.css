@@ -324,12 +324,13 @@
     }
 
     .benefits-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
     .benefit-card {
-        padding: 1rem;
+        padding: 1.5rem 1rem;
+        min-height: 160px;
     }
 
     .benefit-icon {
@@ -467,6 +468,12 @@
    MEDIUM MOBILE
    Max Width: 640px
    =================== */
+
+@media (max-width: 480px) {
+    .benefits-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
 
 @media (max-width: 640px) {
 
