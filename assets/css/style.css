@@ -3227,9 +3227,12 @@ p {
 
 .footer-section h4 {
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
     text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
 }
 
 .footer-section p {
@@ -3244,7 +3247,25 @@ p {
 }
 
 .footer-section ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.footer-section ul li i {
+    font-size: 1.2rem;
+    color: var(--theme-accent);
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer-section ul li span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 .footer-section ul li a {
