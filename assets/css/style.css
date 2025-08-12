@@ -1707,10 +1707,12 @@ p {
     text-align: center;
 }
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.benefits-section .benefits-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    gap: 2.5rem !important;
+    max-width: 100% !important;
 }
 
 .benefit-card {
@@ -1718,13 +1720,13 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1.2rem;
-    padding: 2.5rem 1.5rem;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
-    min-height: 200px;
+    min-height: 220px;
 }
 
 .benefit-card:hover {
@@ -1734,10 +1736,10 @@ p {
 }
 
 .benefit-icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, #2c5aa0, #1976d2);
-    border-radius: 18px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1748,11 +1750,11 @@ p {
 
 .benefit-icon i {
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .benefit-card h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin: 0;
     color: #1a1a1a;
@@ -1761,9 +1763,9 @@ p {
 
 .benefit-card p {
     color: #666;
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 /* Simple Image Carousel */
@@ -2014,12 +2016,7 @@ p {
 }
 
 /* 4-Column Benefits Grid */
-.benefits-grid-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin: 2rem 0;
-}
+
 
 .benefit-item-compact {
     background: #ffffff;
@@ -2178,12 +2175,7 @@ p {
     border-bottom: 6px solid transparent;
 }
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
+
 
 .benefit-item {
     background: rgba(248, 249, 250, 0.8);
