@@ -637,31 +637,16 @@ function initCarousel() {
 // Company Gallery functionality
 let currentGallerySlide = 0;
 const galleryData = [
-    {
-        image: 'assets/img/placeholder-1.svg',
-        title: 'Advanced Manufacturing Facility',
-        description: 'State-of-the-art production lines equipped with cutting-edge technology for sustainable energy solutions.'
-    },
-    {
-        image: 'assets/img/charging-infrastructure.svg',
-        title: 'Solar Power Installation',
-        description: 'Large-scale solar energy projects delivering clean, renewable power to communities and industries.'
-    },
-    {
-        image: 'assets/img/biomass-power.svg',
-        title: 'Biomass Power Plant',
-        description: 'Innovative biomass facilities converting organic waste into clean energy and valuable byproducts.'
-    },
-    {
-        image: 'assets/img/electrification.svg',
-        title: 'Vehicle Electrification Center',
-        description: 'Advanced electrification systems transforming traditional vehicles into clean, efficient electric solutions.'
-    },
-    {
-        image: 'assets/img/skd-assembly.svg',
-        title: 'Research & Development Lab',
-        description: 'Innovation hub where our expert teams develop next-generation sustainable energy technologies.'
-    }
+    { image: 'assets/img/gallery-1.jpg' },
+    { image: 'assets/img/gallery-2.jpg' },
+    { image: 'assets/img/gallery-3.jpg' },
+    { image: 'assets/img/gallery-4.jpg' },
+    { image: 'assets/img/gallery-5.jpg' },
+    { image: 'assets/img/gallery-6.jpg' },
+    { image: 'assets/img/gallery-7.jpg' },
+    { image: 'assets/img/gallery-8.jpg' },
+    { image: 'assets/img/gallery-9.jpg' },
+    { image: 'assets/img/gallery-10.jpg' }
 ];
 
 function changeGallerySlide(direction) {
@@ -684,17 +669,13 @@ function goToGallerySlide(index) {
 
 function updateGallerySlide() {
     const mainImage = document.getElementById('mainGalleryImage');
-    const slideTitle = document.getElementById('slideTitle');
-    const slideDescription = document.getElementById('slideDescription');
     const thumbnails = document.querySelectorAll('.thumbnail');
     
-    if (mainImage && slideTitle && slideDescription) {
+    if (mainImage) {
         const currentData = galleryData[currentGallerySlide];
         
-        // Update main image and content
+        // Update main image
         mainImage.src = currentData.image;
-        slideTitle.textContent = currentData.title;
-        slideDescription.textContent = currentData.description;
         
         // Update thumbnail active state
         thumbnails.forEach((thumb, index) => {
