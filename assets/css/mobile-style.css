@@ -507,6 +507,60 @@
         font-size: 1.2rem;
     }
 
+    /* Company Gallery Mobile Styles */
+    .gallery-header h2 {
+        font-size: 2rem;
+    }
+
+    .carousel-container {
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .carousel-slides {
+        height: 350px;
+    }
+
+    .slide-overlay {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .slide-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+
+    .gallery-arrow {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .gallery-prev {
+        left: 0.5rem;
+    }
+
+    .gallery-next {
+        right: 0.5rem;
+    }
+
+    .thumbnail-navigation {
+        padding: 0.8rem;
+    }
+
+    .thumbnail-track {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+
     /* Mobile Carousel Styles */
     .image-carousel {
         margin: 0 auto 2rem auto;

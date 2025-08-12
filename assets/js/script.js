@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFormHandling();
     initAnimations();
     initCarousel();
+    initGallery();
 });
 
 // Navigation functionality
@@ -495,4 +496,108 @@ function showSlide(n) {
 // Initialize carousel when page loads
 function initCarousel() {
     showSlide(slideIndex);
+}
+
+// Company Gallery functionality
+let currentGallerySlide = 0;
+const galleryData = [
+    {
+        image: 'assets/img/placeholder-1.svg',
+        title: 'Advanced Manufacturing Facility',
+        description: 'State-of-the-art production lines equipped with cutting-edge technology for sustainable energy solutions.'
+    },
+    {
+        image: 'assets/img/charging-infrastructure.svg',
+        title: 'Solar Power Installation',
+        description: 'Large-scale solar energy projects delivering clean, renewable power to communities and industries.'
+    },
+    {
+        image: 'assets/img/biomass-power.svg',
+        title: 'Biomass Power Plant',
+        description: 'Innovative biomass facilities converting organic waste into clean energy and valuable byproducts.'
+    },
+    {
+        image: 'assets/img/electrification.svg',
+        title: 'Vehicle Electrification Center',
+        description: 'Advanced electrification systems transforming traditional vehicles into clean, efficient electric solutions.'
+    },
+    {
+        image: 'assets/img/skd-assembly.svg',
+        title: 'Research & Development Lab',
+        description: 'Innovation hub where our expert teams develop next-generation sustainable energy technologies.'
+    }
+];
+
+function changeGallerySlide(direction) {
+    currentGallerySlide += direction;
+    
+    if (currentGallerySlide >= galleryData.length) {
+        currentGallerySlide = 0;
+    }
+    if (currentGallerySlide < 0) {
+        currentGallerySlide = galleryData.length - 1;
+    }
+    
+    updateGallerySlide();
+}
+
+function goToGallerySlide(index) {
+    currentGallerySlide = index;
+    updateGallerySlide();
+}
+
+function updateGallerySlide() {
+    const mainImage = document.getElementById('mainGalleryImage');
+    const slideTitle = document.getElementById('slideTitle');
+    const slideDescription = document.getElementById('slideDescription');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    
+    if (mainImage && slideTitle && slideDescription) {
+        const currentData = galleryData[currentGallerySlide];
+        
+        // Update main image and content
+        mainImage.src = currentData.image;
+        slideTitle.textContent = currentData.title;
+        slideDescription.textContent = currentData.description;
+        
+        // Update thumbnail active state
+        thumbnails.forEach((thumb, index) => {
+            thumb.classList.toggle('active', index === currentGallerySlide);
+        });
+    }
+}
+
+// Initialize gallery when page loads
+function initGallery() {
+    updateGallerySlide();
+    
+    // Add keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const gallery = document.querySelector('.company-gallery');
+        if (gallery && isElementInViewport(gallery)) {
+            if (e.key === 'ArrowLeft') {
+                changeGallerySlide(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeGallerySlide(1);
+            }
+        }
+    });
+    
+    // Auto-advance slides (optional)
+    setInterval(() => {
+        const gallery = document.querySelector('.company-gallery');
+        if (gallery && isElementInViewport(gallery)) {
+            changeGallerySlide(1);
+        }
+    }, 8000); // Change slide every 8 seconds
+}
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
