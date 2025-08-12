@@ -295,7 +295,7 @@ body {
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     }
     50% {
-        box-shadow: 0 8px 32px rgba(44, 90, 160, 0.2), 0 0 30px rgba(44, 90, 160, 0.1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.05);
     }
 }
 
@@ -328,7 +328,7 @@ body {
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, rgba(44, 90, 160, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, transparent 70%);
     border-radius: 50%;
     z-index: -1;
 }
@@ -489,7 +489,7 @@ p {
 
 /* Enhanced focus states for accessibility */
 *:focus-visible {
-    outline: 2px solid rgba(44, 90, 160, 0.8);
+    outline: 2px solid rgba(0, 0, 0, 0.4);
     outline-offset: 3px;
     border-radius: 4px;
 }
@@ -607,13 +607,13 @@ p {
 .btn-primary {
     background: var(--theme-primary);
     color: white;
-    box-shadow: 0 8px 32px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary:hover {
     background: var(--theme-primary-light);
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(44, 90, 160, 0.4);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
@@ -668,7 +668,7 @@ p {
 
 /* Scrolled header state */
 .header.scrolled {
-    background: linear-gradient(135deg, rgba(25, 118, 210, 0.95) 0%, rgba(66, 165, 245, 0.9) 100%);
+    background: linear-gradient(135deg, var(--theme-primary-light) 0%, var(--theme-accent) 100%);
     backdrop-filter: blur(25px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -1096,7 +1096,7 @@ p {
     font-size: 3rem;
     color: var(--theme-primary);
     margin-bottom: 1rem;
-    filter: drop-shadow(0 4px 10px rgba(44, 90, 160, 0.3));
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     z-index: 2;
@@ -1302,7 +1302,7 @@ p {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(44, 90, 160, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, transparent 70%);
     transform: scale(0);
     transition: transform 0.5s ease;
     pointer-events: none;
@@ -1316,13 +1316,13 @@ p {
     transform: translateY(-15px);
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(44, 90, 160, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .service-icon {
     width: 90px;
     height: 90px;
-    background: linear-gradient(135deg, rgba(44, 90, 160, 0.9), rgba(30, 136, 229, 0.9));
+    background: linear-gradient(135deg, var(--theme-primary), var(--theme-primary-light));
     backdrop-filter: blur(20px);
     border-radius: 25px;
     display: flex;
@@ -1330,13 +1330,13 @@ p {
     justify-content: center;
     margin: 0 auto 2rem auto;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 25px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 }
 
 .service-card:hover .service-icon {
     transform: scale(1.05) rotate(5deg);
-    box-shadow: 0 15px 35px rgba(44, 90, 160, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
 .service-icon i {
@@ -1415,7 +1415,7 @@ p {
     color: var(--theme-primary);
     font-weight: bold;
     font-size: 1.2rem;
-    background: rgba(44, 90, 160, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -1424,7 +1424,7 @@ p {
     justify-content: center;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid rgba(44, 90, 160, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .service-link {
@@ -1436,10 +1436,10 @@ p {
     justify-content: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
-    background: rgba(44, 90, 160, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
-    border: 1px solid rgba(44, 90, 160, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     margin-top: auto;
     margin-bottom: 0;
@@ -1450,7 +1450,7 @@ p {
 
 .service-link:hover {
     gap: 1rem;
-    background: rgba(44, 90, 160, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     transform: translateX(5px);
 }
 
@@ -1539,7 +1539,7 @@ p {
     font-weight: 700;
     font-size: 1.1rem;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .step-content h4 {
@@ -1595,7 +1595,7 @@ p {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem auto;
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .app-icon i {
@@ -1670,7 +1670,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     margin-bottom: 0.5rem;
 }
 
@@ -1984,7 +1984,7 @@ p {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem auto;
-    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .service-node-icon i {
@@ -2057,7 +2057,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .economy-icon i {
@@ -2122,7 +2122,7 @@ p {
     font-weight: 700;
     font-size: 1.1rem;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .capability-step h4 {
@@ -2191,7 +2191,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     margin-bottom: 0.5rem;
 }
 
@@ -2409,7 +2409,7 @@ p {
 .thumbnail.active {
     border-color: var(--theme-primary);
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .thumbnail img {
@@ -2426,7 +2426,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(44, 90, 160, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -2519,12 +2519,12 @@ p {
 }
 
 .dot.active {
-    background: #2c5aa0;
+    background: var(--theme-primary);
     transform: scale(1.3);
 }
 
 .dot:hover {
-    background: rgba(44, 90, 160, 0.7);
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .solution-detail::before {
@@ -2876,7 +2876,7 @@ p {
     font-size: 2.5rem;
     color: var(--theme-primary);
     margin-bottom: 1rem;
-    filter: drop-shadow(0 4px 10px rgba(44, 90, 160, 0.3));
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
 }
 
 .timeline {
@@ -2889,7 +2889,7 @@ p {
     padding: 2rem;
     border-radius: 20px;
     margin-bottom: 1.5rem;
-    border-left: 4px solid #2c5aa0;
+    border-left: 4px solid var(--theme-primary);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
@@ -2940,7 +2940,7 @@ p {
     margin: 0 auto 1.5rem;
     border: 2px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 25px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .application-list, .feature-list, .capability-list {
@@ -2972,7 +2972,7 @@ p {
     position: absolute;
     left: 0;
     color: var(--theme-primary);
-    background: rgba(44, 90, 160, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -2981,7 +2981,7 @@ p {
     justify-content: center;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid rgba(44, 90, 160, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 0.8rem;
 }
 
@@ -3013,7 +3013,7 @@ p {
     font-size: 3rem;
     color: var(--theme-primary);
     margin-bottom: 1rem;
-    filter: drop-shadow(0 4px 10px rgba(44, 90, 160, 0.3));
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
 }
 
 .energy-services {
@@ -3024,7 +3024,7 @@ p {
 }
 
 .service-item {
-    background: rgba(44, 90, 160, 0.9);
+    background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(20px);
     color: white;
     padding: 1.5rem 1rem;
@@ -3033,7 +3033,7 @@ p {
     align-items: center;
     gap: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 25px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 }
 
@@ -3109,10 +3109,10 @@ p {
     font-size: 1.8rem;
     color: var(--theme-primary);
     margin-top: 0.2rem;
-    background: rgba(44, 90, 160, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     padding: 1rem;
     border-radius: 50%;
-    border: 1px solid rgba(44, 90, 160, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
 }
 
@@ -3153,9 +3153,9 @@ p {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: rgba(44, 90, 160, 0.5);
+    border-color: rgba(0, 0, 0, 0.25);
     background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 8px 25px rgba(44, 90, 160, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
 
@@ -3177,7 +3177,7 @@ p {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 20%, rgba(44, 90, 160, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(30, 136, 229, 0.15) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
@@ -3267,7 +3267,7 @@ p {
 .social-links a {
     width: 45px;
     height: 45px;
-    background: rgba(44, 90, 160, 0.8);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     color: white;
     display: flex;
@@ -3277,7 +3277,7 @@ p {
     text-decoration: none;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .social-links a:hover {
@@ -3462,28 +3462,28 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(44, 90, 160, 0.6);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     backdrop-filter: blur(10px);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(44, 90, 160, 0.8);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 /* Selection styles */
 ::selection {
-    background: rgba(44, 90, 160, 0.3);
+    background: rgba(0, 0, 0, 0.15);
     color: #333;
 }
 
 ::-moz-selection {
-    background: rgba(44, 90, 160, 0.3);
+    background: rgba(0, 0, 0, 0.15);
     color: #333;
 }
 
 /* Focus styles for accessibility */
 *:focus {
-    outline: 2px solid rgba(44, 90, 160, 0.6);
+    outline: 2px solid rgba(0, 0, 0, 0.3);
     outline-offset: 2px;
 }
