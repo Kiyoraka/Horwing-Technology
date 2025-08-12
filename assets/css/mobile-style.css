@@ -139,15 +139,31 @@
         max-width: 400px;
         margin: 0 auto;
         gap: 1.5rem !important;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .gallery-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .gallery-item img {
         height: 250px !important;
+        width: 100%;
+        object-fit: cover;
     }
 
     .about-features {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .about-text {
+        padding: 2rem;
+        height: fit-content;
     }
 
     /* Electrification Placeholder Gallery Mobile */
@@ -298,19 +314,35 @@
     .about-gallery {
         width: 90% !important;
         max-width: 380px;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .gallery-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .gallery-item img {
         height: 220px !important;
+        width: 100%;
+        object-fit: cover;
     }
 
     .about-features {
         grid-template-columns: 1fr;
         gap: 1.2rem;
+        margin-top: 1.5rem;
     }
 
     .feature {
         padding: 2rem 1.5rem;
+    }
+
+    .about-text {
+        padding: 1.5rem;
+        height: fit-content;
     }
 
     .electrification-placeholder-gallery {
@@ -360,6 +392,37 @@
         padding: 1.5rem;
     }
 
+    .about-gallery {
+        width: 100% !important;
+        max-width: 350px;
+        gap: 1rem !important;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .gallery-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-item img {
+        height: 200px !important;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px !important;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .feature {
+        padding: 1.5rem 1rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
@@ -376,23 +439,6 @@
     .about-features {
         grid-template-columns: 1fr;
         gap: 1rem;
-    }
-
-    .about-gallery {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        width: 100% !important;
-        max-width: 350px;
-        padding: 0.5rem !important;
-    }
-
-    .gallery-item {
-        padding: 0.5rem !important;
-    }
-
-    .gallery-item img {
-        height: 200px !important;
-        border-radius: 15px !important;
     }
 
     .electrification-gallery {
