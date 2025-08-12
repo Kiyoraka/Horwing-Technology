@@ -941,13 +941,12 @@ p {
     border-radius: 12px;
 }
 
-/* Electrification Placeholder Gallery */
-.electrification-placeholder-gallery {
+/* Electrification Single Image */
+.electrification-single-image {
     margin-top: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    gap: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: fit-content;
     justify-self: center;
     width: 600px;
@@ -990,13 +989,17 @@ p {
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
-.placeholder-item img {
+.electrification-single-image img {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    aspect-ratio: 16/9;
+    object-fit: contain;
     display: block;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
 }
 
 /* Charging Gallery */
@@ -1788,7 +1791,7 @@ p {
 
 .process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin: 2rem 0;
 }
@@ -2359,4 +2362,52 @@ p {
 *:focus {
     outline: 2px solid rgba(44, 90, 160, 0.6);
     outline-offset: 2px;
+}
+
+/* Responsive Design for Vehicle Electrification Section */
+@media (max-width: 1200px) {
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .electrification-single-image {
+        width: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .electrification-single-image {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .electrification-single-image {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .electrification-single-image {
+        width: 100%;
+        max-width: 350px;
+    }
 }
