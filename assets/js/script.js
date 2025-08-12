@@ -208,27 +208,31 @@ function initFormHandling() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(contactForm);
-            const formObject = {};
+            // Collect form data
+            const formData = collectFormData(contactForm);
             
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
+            // Validate required fields
+            if (!validateFormData(formData)) {
+                showNotification('Please fill in all required fields correctly.', 'error');
+                return;
+            }
             
             // Show loading state
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.textContent = 'Opening WhatsApp...';
             submitBtn.disabled = true;
             
-            // Simulate form submission (replace with actual endpoint)
+            // Send to WhatsApp
+            sendToWhatsApp(formData);
+            
+            // Reset form and button state after a short delay
             setTimeout(() => {
-                showNotification('Thank you for your message! We will get back to you soon.', 'success');
+                showNotification('Redirecting to WhatsApp...', 'success');
                 contactForm.reset();
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-            }, 2000);
+            }, 1500);
         });
     }
 
@@ -238,6 +242,74 @@ function initFormHandling() {
         input.addEventListener('blur', validateField);
         input.addEventListener('input', clearValidation);
     });
+}
+
+// Collect form data from contact form
+function collectFormData(form) {
+    const data = {
+        name: form.querySelector('input[placeholder="Your Name"]')?.value?.trim() || '',
+        email: form.querySelector('input[placeholder="Your Email"]')?.value?.trim() || '',
+        phone: form.querySelector('input[placeholder="Your Phone"]')?.value?.trim() || '',
+        service: form.querySelector('select')?.value || '',
+        message: form.querySelector('textarea[placeholder="Your Message"]')?.value?.trim() || ''
+    };
+    
+    return data;
+}
+
+// Validate form data
+function validateFormData(data) {
+    // Check required fields
+    if (!data.name || !data.email || !data.message || !data.service) {
+        return false;
+    }
+    
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email)) {
+        return false;
+    }
+    
+    return true;
+}
+
+// Send data to WhatsApp
+function sendToWhatsApp(data) {
+    const whatsappNumber = '60123202422'; // Malaysia number format
+    
+    // Get service name from select option
+    const serviceNames = {
+        'skd': 'Vehicle SKD Assembly',
+        'electrification': 'Vehicle Electrification',
+        'charging': 'Charging Stations',
+        'biomass': 'Biomass Power',
+        'consultation': 'General Consultation'
+    };
+    
+    const serviceName = serviceNames[data.service] || data.service;
+    
+    // Format the message
+    let message = `🌟 *HORWING TECHNOLOGY - Contact Inquiry* 🌟\n\n`;
+    message += `👤 *Name:* ${data.name}\n`;
+    message += `📧 *Email:* ${data.email}\n`;
+    
+    if (data.phone) {
+        message += `📱 *Phone:* ${data.phone}\n`;
+    }
+    
+    message += `🔧 *Service Interest:* ${serviceName}\n\n`;
+    message += `💬 *Message:*\n${data.message}\n\n`;
+    message += `---\n`;
+    message += `*Sent from: www.horwingtechnology.com*`;
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab/window
+    window.open(whatsappUrl, '_blank');
 }
 
 // Field validation
