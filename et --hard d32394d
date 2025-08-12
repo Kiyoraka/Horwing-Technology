@@ -1,0 +1,15 @@
+[33m8b26d8b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m style: enhance hero image with corporate professional styling - refined borders, shadows, and hover effects
+[33m2452f5a[m refactor: create dedicated hero-section.css with 16:9 aspect ratio and import into main stylesheet
+[33m4ea81e9[m style: decrease left content panel height to better match right gallery dimensions for proper alignment
+[33m61cb7a5[m refactor: create dedicated about-section.css to resolve conflicts and ensure proper height alignment
+[33ma03819f[m feat: redesign about section to horizontal 3-column layout for better alignment
+[33m0550bed[m style: decrease gallery size and improve height alignment with left content panel
+[33m402dc64[m fix: resolve height mismatch between left content panel and right gallery for proper vertical alignment
+[33md32394d[m style: improve about section alignment for better visual balance between left content and right gallery
+[33m4bc1685[m[33m ([m[1;31morigin/main[m[33m)[m update date
+[33mfd3e695[m docs: comprehensive README update with project documentation, features, and technical details
+[33m64b2704[m Merge branch 'main' of https://github.com/Kiyoraka/Horwing-Technology
+[33m87296ba[m feat: center all service icons horizontally within service cards
+[33m304c2c7[m Create static.yml
+[33m25b9580[m feat: replace placeholders with electrification.svg and increase image sizes in Vehicle Electrification section
+[33me56ea02[m feat: replace placeholders with charging-infrastructure.svg, add 4th image, and increase sizes in Charging Station section
