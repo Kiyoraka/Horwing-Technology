@@ -1459,6 +1459,31 @@ p {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* Electrification Single Image */
+.electrification-single-image {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    justify-self: center;
+    width: 600px;
+    padding: 1rem;
+}
+
+.electrification-single-image img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+}
+
 /* New Vertical Layout for SKD Details */
 .detail-content-vertical {
     display: flex;
@@ -2349,12 +2374,20 @@ p {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
+    
+    .electrification-single-image {
+        width: 500px;
+    }
 }
 
 @media (max-width: 992px) {
     .process-steps {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+    }
+    
+    .electrification-single-image {
+        width: 450px;
     }
 }
 
@@ -2363,11 +2396,28 @@ p {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+    
+    .detail-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .electrification-single-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
     .process-steps {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    
+    .electrification-single-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 }
