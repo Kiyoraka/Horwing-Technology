@@ -315,39 +315,39 @@
         font-size: 1.3rem;
     }
 
-    .benefits-section {
+    .electrification-benefits {
         padding: 2rem;
     }
 
-    .benefits-section h3 {
+    .electrification-benefits h3 {
         font-size: 1.5rem;
     }
 
-    .benefits-grid {
+    .electrification-benefits-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
-    .benefit-card {
+    .electrification-benefit-card {
         padding: 1.5rem 1rem;
         min-height: 160px;
         gap: 0.8rem;
     }
 
-    .benefit-icon {
+    .electrification-benefit-icon {
         width: 50px;
         height: 50px;
     }
 
-    .benefit-icon i {
+    .electrification-benefit-icon i {
         font-size: 1.2rem;
     }
 
-    .benefit-card h4 {
+    .electrification-benefit-card h4 {
         font-size: 1.1rem;
     }
 
-    .benefit-card p {
+    .electrification-benefit-card p {
         font-size: 0.9rem;
         line-height: 1.3;
     }
@@ -480,30 +480,30 @@
    =================== */
 
 @media (max-width: 480px) {
-    .benefits-grid {
+    .electrification-benefits-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 0.8rem;
     }
 
-    .benefit-card {
+    .electrification-benefit-card {
         padding: 1.2rem 0.8rem;
         min-height: 150px;
     }
 
-    .benefit-icon {
+    .electrification-benefit-icon {
         width: 40px;
         height: 40px;
     }
 
-    .benefit-icon i {
+    .electrification-benefit-icon i {
         font-size: 1rem;
     }
 
-    .benefit-card h4 {
+    .electrification-benefit-card h4 {
         font-size: 0.95rem;
     }
 
-    .benefit-card p {
+    .electrification-benefit-card p {
         font-size: 0.8rem;
         line-height: 1.3;
     }
