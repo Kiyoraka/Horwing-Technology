@@ -1515,19 +1515,30 @@ p {
     align-items: center;
 }
 
-.service-benefits {
-    list-style: none;
+.service-benefits-container {
+    height: 220px;
     margin: 2rem 0;
     background: rgba(248, 249, 250, 0.8);
     backdrop-filter: blur(10px);
     padding: 1.5rem;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 180px;
+}
+
+.service-benefits {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    height: 100%;
 }
 
 .service-benefits li {

@@ -246,13 +246,17 @@
         min-height: 4rem;
     }
 
-    .service-benefits {
-        min-height: 160px;
+    .service-benefits-container {
+        height: 180px;
         padding: 1rem;
     }
 
+    .service-benefits {
+        gap: 0.3rem;
+    }
+
     .service-benefits li {
-        padding: 0.5rem 0;
+        padding: 0.4rem 0;
         font-size: 0.9rem;
     }
 
