@@ -175,35 +175,26 @@
     <section id="skd-details" class="solution-detail">
         <div class="container">
             <div class="detail-content-vertical">
-                <!-- Image Carousel Section -->
-                <div class="detail-image-carousel">
-                    <div class="carousel-container">
-                        <button class="carousel-arrow carousel-prev" aria-label="Previous image">
+                <!-- Simple Image Carousel -->
+                <div class="image-carousel">
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">
                             <i class="fas fa-chevron-left"></i>
                         </button>
                         
-                        <div class="carousel-track">
-                            <div class="carousel-slide active">
-                                <img src="assets/img/skd1.jpg" alt="SKD Assembly Factory - Overview" style="border: 2px solid red; background: yellow;" onerror="console.log('Image 1 failed to load:', this.src)">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="assets/img/skd2.jpg" alt="SKD Assembly Factory - Production Line" style="border: 2px solid red; background: yellow;" onerror="console.log('Image 2 failed to load:', this.src)">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="assets/img/skd3.jpg" alt="SKD Assembly Factory - Quality Control" style="border: 2px solid red; background: yellow;" onerror="console.log('Image 3 failed to load:', this.src)">
-                            </div>
+                        <div class="carousel-images">
+                            <img id="carousel-img" src="assets/img/skd1.jpg" alt="SKD Assembly Factory">
                         </div>
                         
-                        <button class="carousel-arrow carousel-next" aria-label="Next image">
+                        <button class="carousel-btn next-btn" onclick="changeSlide(1)">
                             <i class="fas fa-chevron-right"></i>
                         </button>
                     </div>
                     
-                    <!-- Carousel Indicators -->
-                    <div class="carousel-indicators">
-                        <button class="indicator active" data-slide="0" aria-label="View image 1"></button>
-                        <button class="indicator" data-slide="1" aria-label="View image 2"></button>
-                        <button class="indicator" data-slide="2" aria-label="View image 3"></button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
                 </div>
                 

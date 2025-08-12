@@ -266,48 +266,32 @@
         gap: 2rem;
     }
 
-    /* Carousel Mobile Styles */
-    .detail-image-carousel {
-        max-width: 100%;
+    /* Mobile Carousel Styles */
+    .image-carousel {
         margin: 0 auto 2rem auto;
+        padding: 1rem;
     }
 
-    .carousel-container {
-        padding: 0.5rem;
-        flex-direction: column;
+    .carousel-wrapper {
         gap: 0.5rem;
     }
 
-    .carousel-track {
-        height: 250px;
-        order: 2;
+    .carousel-images {
+        min-height: 250px;
+        padding: 0.5rem;
     }
 
-    .carousel-arrow {
+    .carousel-images img {
+        max-height: 250px;
+    }
+
+    .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 1rem;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 3;
     }
 
-    .carousel-prev {
-        left: 0.5rem;
-    }
-
-    .carousel-next {
-        right: 0.5rem;
-    }
-
-    .carousel-indicators {
-        margin-top: 0.5rem;
-        order: 3;
-    }
-
-    .indicator {
+    .dot {
         width: 10px;
         height: 10px;
     }
