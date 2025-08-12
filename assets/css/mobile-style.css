@@ -424,6 +424,89 @@
         font-size: 1.2rem;
     }
 
+    /* Biomass Mobile Styles */
+    .biomass-header h2 {
+        font-size: 2rem;
+    }
+
+    .services-wheel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .service-node {
+        padding: 1.5rem 1rem;
+    }
+
+    .service-node-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-node-icon i {
+        font-size: 1.5rem;
+    }
+
+    .service-node h4 {
+        font-size: 1.1rem;
+    }
+
+    .biomass-features {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .circular-economy-section h3,
+    .capabilities-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .economy-benefit,
+    .capability-step {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .economy-icon,
+    .step-indicator {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .economy-benefit h4,
+    .capability-step h4 {
+        font-size: 1.1rem;
+    }
+
+    .biomass-value {
+        padding: 2rem;
+    }
+
+    .biomass-value h3 {
+        font-size: 1.5rem;
+    }
+
+    .value-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .value-card {
+        padding: 1.5rem;
+        min-height: 160px;
+    }
+
+    .value-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .value-icon i {
+        font-size: 1.2rem;
+    }
+
     /* Mobile Carousel Styles */
     .image-carousel {
         margin: 0 auto 2rem auto;
@@ -578,6 +661,33 @@
     .electrification-benefit-card p {
         font-size: 0.8rem;
         line-height: 1.3;
+    }
+
+    /* Biomass Services Wheel Mobile */
+    .services-wheel {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    .service-node {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .service-node-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-node-icon i {
+        font-size: 1.3rem;
+    }
+
+    .service-node h4 {
+        font-size: 1rem;
+    }
+
+    .service-node p {
+        font-size: 0.9rem;
     }
 }
 
