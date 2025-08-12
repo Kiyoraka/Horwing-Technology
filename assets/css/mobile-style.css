@@ -141,6 +141,12 @@
         margin-top: 1.5rem;
     }
 
+    /* Enhanced mobile hover effects */
+    .feature:active {
+        transform: translateY(-8px) scale(1.01);
+        transition: all 0.2s ease;
+    }
+
     .about-text {
         padding: 2rem;
         height: fit-content;
