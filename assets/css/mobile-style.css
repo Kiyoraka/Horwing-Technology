@@ -152,6 +152,22 @@
         height: fit-content;
     }
 
+    .about-text h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-text .about-mission {
+        font-size: 0.95rem;
+        padding: 0.8rem 1rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+
     /* Electrification Placeholder Gallery Mobile */
     .electrification-placeholder-gallery {
         width: 100% !important;
