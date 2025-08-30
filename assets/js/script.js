@@ -1,67 +1,4 @@
 // DOM Content Loaded
-// Theme Selector functionality
-let isThemeWheelOpen = false;
-
-function initThemeSelector() {
-    const themeToggle = document.getElementById('themeToggle');
-    const themeWheel = document.getElementById('themeWheel');
-    const themeOptions = document.querySelectorAll('.theme-option');
-    
-    if (!themeToggle || !themeWheel) return;
-    
-    // Load saved theme
-    const savedTheme = localStorage.getItem('selectedTheme') || 'blue';
-    setTheme(savedTheme);
-    
-    // Toggle theme wheel
-    themeToggle.addEventListener('click', function(e) {
-        e.stopPropagation();
-        isThemeWheelOpen = !isThemeWheelOpen;
-        themeWheel.classList.toggle('active', isThemeWheelOpen);
-    });
-    
-    // Close theme wheel when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.theme-selector')) {
-            isThemeWheelOpen = false;
-            themeWheel.classList.remove('active');
-        }
-    });
-    
-    // Theme option selection
-    themeOptions.forEach(option => {
-        option.addEventListener('click', function() {
-            const theme = this.dataset.theme;
-            setTheme(theme);
-            localStorage.setItem('selectedTheme', theme);
-            
-            // Close wheel after selection
-            isThemeWheelOpen = false;
-            themeWheel.classList.remove('active');
-            
-            // Show notification
-            showNotification(`Theme changed to ${theme.charAt(0).toUpperCase() + theme.slice(1)}!`, 'success');
-        });
-    });
-}
-
-function setTheme(themeName) {
-    // Update body data-theme attribute
-    document.body.setAttribute('data-theme', themeName);
-    
-    // Update active theme option
-    const themeOptions = document.querySelectorAll('.theme-option');
-    themeOptions.forEach(option => {
-        option.classList.toggle('active', option.dataset.theme === themeName);
-    });
-    
-    // Add a subtle animation to show theme change
-    document.body.style.transition = 'all 0.3s ease';
-    setTimeout(() => {
-        document.body.style.transition = '';
-    }, 300);
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
     initNavigation();
@@ -72,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initCarousel();
     initGallery();
-    initThemeSelector();
 });
 
 // Navigation functionality
